@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    display: flex;
+    color: white;
+    font-size: 17px;
+    margin:0px 14px;
+    align-items: center;
+}
+#logo img{
+    height: 25px;
+    filter: invert(1);
+}
+
+#navbar{
+    background-color:#d43b3b;
+    padding: 13px 14px;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+}
+
+#navbar li{
+ list-style: none;
+}
+
+#navbar li a{
+    color: white;
+    font-size: 20px;
+    padding: 13px 30px;
+    text-decoration: none;
+}
+
+#navbar li a:hover{
+    color: black;
+    cursor: pointer;
+    
+}
+
+#introSection{
+    font-family: 'Unbounded', cursive;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    background: url('/static/bg.jpg') no-repeat center/cover;
+height: 300px;
+background-color: red;
+}
+#introSection div.small{
+    font-size: 20px;
+    padding: 9px;
+}
+
+#MissionSection{
+    height: 300px;
+    width: 65%;
+    margin: auto;
+}
+
+#MissionSection h2{
+    text-align: center;
+    padding-top: 10px;
+}
+
+#sponsorSection{
+    height: 300px;
+    background-color: #fbd6d6c7;
+    
+}
+#sponsorSection h2{
+    text-align: center;
+    padding-top: 10px;
+}
+.card{
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30%;
+    margin: 20px 8px;
+    height: 210px;
+    display: inline-block;
+
+}
+.card h3{
+    text-align: center;
+    margin: 12px;
+}
+
+.card-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-img{
+    height: 100px;
+    padding: 0px 14px;
+    margin: 12px 5px;
+}
+
+.card-img img{
+    height: inherit;
+}
+.card-content{
+padding: 0px 10px;    
+}
+
+#sponsors{
+    height: 190px;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+.spImage{
+height: 85%;
+margin: 16px;
+}
+#footer{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+}
