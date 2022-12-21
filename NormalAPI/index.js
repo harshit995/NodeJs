@@ -13,15 +13,17 @@ app.use('/static',express.static('static'))
 app.use(express.urlencoded())
 
 
-//Endpoint
+//Endpoint 
 app.get("/",(req,res)=>{
 res.status(200).send("Creating our own Api....")
-})
+}) 
 
 app.get("/api",(req,res)=>{
 // res.writeHead(200,{"content-type":"application/json"});
 // res.status(200).send(data)
-res.status(200).send(objData[2].name)
+rand=Math.floor(Math.random()*10)
+console.log(rand)
+res.status(200).send(objData[rand])
 })
 
 app.listen(port,()=>{

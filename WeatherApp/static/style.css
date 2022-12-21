@@ -1,0 +1,14 @@
+/* https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
+
+https://api.openweathermap.org/data/2.5/weather?q=Agra&appid=4db3b5ebf21c11d90c12191df037ac3d
+
+668d0b58ece57412b76ba0d6071ba65b*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.fa-sun{
+    color: yellow !important;
+}

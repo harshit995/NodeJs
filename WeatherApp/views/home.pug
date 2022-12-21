@@ -1,0 +1,26 @@
+extends base.pug
+
+block scripts 
+    script(src="/static/index.js")
+    
+block style 
+    style   
+        include ../static/style.css
+
+block content
+    div.box 
+        div.wave.-one
+        div.wave.-two
+        div.wave.-three 
+        div#weathercon
+            i.fa-solid.fa-sun
+        div.info 
+            h2.location
+                i.fa-solid.fa-street-view
+                    | Agra,In
+            p#date 
+                | Wed |DEC 21|2:35PM 
+            h1.temp 
+                | 26.49°C 
+            h3.tempin_max 
+                | Min 26.49°C | Max 26.98°C 
