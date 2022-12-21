@@ -17,10 +17,14 @@ block content
         div.info 
             h2.location
                 i.fa-solid.fa-street-view
-                    | Agra,In
+                //- p 
+                //-     input(type="text",class="myInput",name="city",placeholder="Enter City Name...")
+                //-     button(class="btn")
+                //-         | Submit
             p#date 
                 | Wed |DEC 21|2:35PM 
+                p.place #{place}
             h1.temp 
-                | 26.49°C 
+                | #{weatherTemp} 
             h3.tempin_max 
-                | Min 26.49°C | Max 26.98°C 
+                | Min #{temp_min}°C | Max #{temp_max}°C 
