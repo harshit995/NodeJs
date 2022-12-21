@@ -27,11 +27,13 @@ app.set('views', path.join(__dirname,'views'))  //set the view directory //some 
 
 
 app.get('/' ,(req,res)=>{
+    res.status(200).render('home.pug')
+})
 
-    // let city = req.body.city;
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=Agra&units=metric&appid=${apiKey}`
+app.post('/api' ,(req,res)=>{
+    let city=req.body.name
+    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
     request(url, function(err, response, body) {
-
         // On return, check the json data fetched
         if (err) {
             res.render('home.pug', { weather: null, error: 'Error, please try again' });
@@ -53,8 +55,8 @@ app.get('/' ,(req,res)=>{
 res.render("home.pug",{
     weatherTemp: `${weather.main.temp}`,
     temp_min: `${weather.main.temp_min}`,
-    temp_max: `${weather.main.temp_max}`,
-    place : `${weather.name}, ${weather.sys.country}`,
+    humidity: `${weather.main.humidity}`,
+    place : `${weather.name}, ${weather.sys.country}`
     // weatherPressure: `${weather.main.pressure}`,
     // weatherDescription: `${weather.weather[0].description}`,
     // humidity: `${weather.main.humidity}`,

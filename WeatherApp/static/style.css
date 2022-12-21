@@ -102,11 +102,12 @@ html {
 }
 
 .location {
-    margin-top: -5.5rem;
+    margin-top: -11rem;
     text-align: center;
     font-weight: 800;
     font-size: 2rem;
     text-transform: capitalize;
+    
 }
 
 .fa-street-view {
@@ -159,6 +160,7 @@ html {
 #weathercon .fa-sun {
     font-size: 6rem;
     animation: fas-anime 3s linear infinite alternate;
+    margin-bottom: 9rem;
 }
 
 @keyframes fas-anime {
@@ -235,4 +237,13 @@ body > span {
     font-size: 15px;
     border: 2px solid #9D8e8e;
     border-radius: 12px;
+}
+
+.btn{
+    padding: 2px 16px;
+    font-size: 18px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #487cc5;
 }
