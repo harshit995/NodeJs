@@ -7,9 +7,9 @@ block style
 
 block content
     h1 Log In 
-    form(action="/",method="post",class="myForm")
+    form(action="/login",method="post",class="myForm")
              input(type="text",class="myInput",name="name",placeholder="Enter your Username here...")
              input(type="password",class="myInput",name="password",placeholder="Enter your Password here...")
              button(class="btn",type="submit")
                  | Submit
-    a(href="/signUp") Make New Account
+    a(href="/signUp",class="btns") Make New Account

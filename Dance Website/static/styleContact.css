@@ -40,3 +40,11 @@ h1{
     cursor: pointer;
     background-color: #c70a0a;
 }
+.btns{
+    padding: 12px 16px;
+    font-size: 18px;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #d8c2eb;
+}
