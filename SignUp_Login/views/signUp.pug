@@ -1,0 +1,14 @@
+extends base.pug
+
+    
+block style 
+    style   
+        include ../static/style.css
+
+block content
+    h1 Sign Up 
+    form(action="/login",method="post",class="myForm")
+             input(type="text",class="myInput",name="name",placeholder="Enter your Username here...")
+             input(type="password",class="myInput",name="password",placeholder="Enter your Password here...")
+             button(class="btn",type="submit")
+                 | Submit
