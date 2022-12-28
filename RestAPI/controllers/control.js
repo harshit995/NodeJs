@@ -2,7 +2,7 @@ const Product = require("../models/product")
 
 const getAllProducts =async (req,res)=>{
 
-    const { category, price , sort } =req.query;
+    const { category, price , sort ,select} =req.query;
     const queryobject= {};
     
     if(category){
@@ -18,13 +18,19 @@ const getAllProducts =async (req,res)=>{
     let Apidata= Product.find(queryobject)
 
     if(sort){
-        let sortFix = sort.replace(","," ");
+        let sortFix = sort.split(",").join(" ");
         Apidata=Apidata.sort(sortFix)
     }
+
+    if(select){
+        // let selectFix = select.replace(","," ");
+        let selectFix = select.split(",").join(" ");
+        Apidata=Apidata.select(selectFix)
+    }
+
     console.log(queryobject)
 
 const myData = await Apidata;
-
 res.status(200).json({myData});
 };
 
