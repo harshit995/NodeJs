@@ -11,6 +11,7 @@ const products_routes=require("./routes/products")
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
+
 app.get('/',(req,res)=>{
     res.send("Hi i am live")
 })
