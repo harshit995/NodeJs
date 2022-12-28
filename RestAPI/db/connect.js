@@ -1,6 +1,6 @@
 // const mongoose= require("mongoose");
 
-// uri="mongodb+srv://Harshit:9958328356@restapi.hdgzce4.mongodb.net/RestAPI?retryWrites=true&w=majority"
+// uri="mongodb+srv://Harshit:<pass>@restapi.hdgzce4.mongodb.net/<RestAPI>?retryWrites=true&w=majority"
 
 // const connectDB = () =>{
 //     return mongoose.connect(uri,options,callback)
